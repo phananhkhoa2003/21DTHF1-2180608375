@@ -14,6 +14,8 @@ namespace Lab05
 {
     public partial class Form1 : Form
     {
+        //nghai was here
+
         StudentDBContext db = new StudentDBContext();
         public Form1()
         {
