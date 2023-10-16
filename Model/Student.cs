@@ -9,14 +9,13 @@ namespace Lab05.Model
     [Table("Student")]
     public partial class Student
     {
-        [StringLength(20)]
+        [StringLength(10)]
         public string StudentID { get; set; }
 
-        [Required]
-        [StringLength(200)]
+        [StringLength(60)]
         public string FullName { get; set; }
 
-        public double AverageScore { get; set; }
+        public double? DiemTB { get; set; }
 
         public int FacultyID { get; set; }
 

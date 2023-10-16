@@ -30,8 +30,8 @@ namespace Lab05
                 StudentReport temp = new StudentReport();
                 temp.StudentID = i.StudentID;
                 temp.FullName = i.FullName;
-                temp.AverageScore = i.AverageScore;
-                temp.FacultyName = i.Faculty.Faculty1;
+                temp.AverageScore= i.DiemTB.Value;
+                temp.FacultyName = i.Faculty.FacultyName;
                 listreport.Add(temp);
             }
             this.reportViewer1.LocalReport.ReportPath = "Report1.rdlc";

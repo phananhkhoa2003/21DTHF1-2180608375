@@ -8,7 +8,7 @@ namespace Lab05.Model
     public partial class StudentDBContext : DbContext
     {
         public StudentDBContext()
-            : base("name=StudentDBContext")
+            : base("name=StudentDBContext1")
         {
         }
 
@@ -18,7 +18,7 @@ namespace Lab05.Model
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Faculty>()
-                .Property(e => e.Faculty1)
+                .Property(e => e.FacultyName)
                 .IsFixedLength();
 
             modelBuilder.Entity<Faculty>()
@@ -28,7 +28,8 @@ namespace Lab05.Model
 
             modelBuilder.Entity<Student>()
                 .Property(e => e.StudentID)
-                .IsFixedLength();
+                .IsFixedLength()
+                .IsUnicode(false);
 
             modelBuilder.Entity<Student>()
                 .Property(e => e.FullName)
