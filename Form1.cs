@@ -11,7 +11,7 @@ using Lab05.Model;
 using Microsoft.Reporting.WinForms;
 
 namespace Lab05
-{
+{// hao da o day
     public partial class Form1 : Form
     {
         StudentDBContext db = new StudentDBContext();
